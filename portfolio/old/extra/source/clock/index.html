@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - AlpineJS Digital Clock</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="clock" x-data="app()" x-init="startClock();updateClock();">
+    <p id="date" x-text="date">Loading...</p>
+    <p id="time" x-text="time">00:00:00</p>
+    <br>
+    <center> Have a Good Day</center>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

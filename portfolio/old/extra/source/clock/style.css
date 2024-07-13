@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #021b42;
+  background: radial-gradient(circle, #12c0c9 0%, #021b42 100%);
+  background-size: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#clock {
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  text-shadow: 0 0 20px rgba(200, 250, 205, 0.5), 0 0 20px rgba(200, 250, 205, 0);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 25px;
+  border-radius: 1rem;
+  border: 1px solid rgba(200, 250, 205, 0.1);
+}
+#clock #time {
+  letter-spacing: 0.05em;
+  font-size: 100px;
+  padding: 5px 0;
+  font-weight: 800;
+  line-height: 1;
+}
+#clock #date {
+  letter-spacing: 0.1em;
+  font-size: 18px;
+}
+#clock #buymeabeer {
+  margin: 5px 0 0;
+  letter-spacing: 0.1em;
+  font-size: 10px;
+}
+#clock #buymeabeer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#clock #buymeabeer a:hover {
+  text-decoration: underline;
+}

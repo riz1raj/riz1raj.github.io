@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <!-- meta charset -->
+        <meta charset="utf-8">
+        <!-- site title -->
+        <title>Digital Certificates</title>
+        <!-- meta description -->
+        <meta name="description" content="">
+        <!-- mobile viwport meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fevicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <!-- ================================
+        CSS Files
+        ================================= -->
+        <style>
+
+
+
+        .gallery cf {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+
+
+        .gallery {
+          width: 980px;
+          margin: 0 auto;
+          padding: 8px;
+          background: white;
+          box-shadow: 0 2px 10px orange;
+        }
+
+        .gallery > div {
+          position: relative;
+          float: left;
+          padding: 10px;
+        }
+
+        .gallery > div > img {
+          display: block;
+          width: 220px;
+          transition: .1s transform;
+          transform: translateZ(0); /* hack */
+        }
+
+        .gallery > div:hover {
+          z-index: 1;
+        }
+
+        .gallery > div:hover > img {
+          transform: scale(3.7,3.7);
+          transition: .3s transform;
+        }
+
+        .cf:before, .cf:after {
+          display: table;
+          content: "";
+          line-height: 0;
+        }
+
+        .cf:after {
+          clear: both;
+        }
+
+        h1 {
+          margin: 40px 0;
+          font-size: 30px;
+          font-weight: 300;
+          text-align: center;
+        }
+</style>
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="../css/themefisher-fonts.min.css">
+        <link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/dark.css">
+        <link id="color-changer" rel="stylesheet" href="../css/colors/color-0.css">
+    </head>
+
+    <body class="dark" onload="myFunction()" style="margin:0;">
+
+
+        <div class="preloader">
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+            <div class="loading-mask"></div>
+        </div>
+
+        <div class="preview-wrapper">
+            <div class="switcher-head">
+                <span>Style Switcher</span>
+                <div class="switcher-trigger tf-tools"></div>
+            </div>
+
+            <div class="switcher-body">
+                <h4>Choose Color:</h4>
+                <ul class="color-options list-none">
+                    <li class="c0" data-color="color-0" title="Default">Default</li>
+                    <li class="c1" data-color="color-1" title="Red">Red</li>
+                    <li class="c2" data-color="color-2" title="Green">Green</li>
+                    <li class="c3" data-color="color-3" title="Blue">Blue</li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="site-wrapper">
+            <div class="pt-table">
+                <div class="pt-tablecell page-works relative">
+                    <!-- .close -->
+                    <a href="./" class="page-close"><i class="tf-ion-close">    </i></a>
+                    <!-- /.close -->
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                                <div class="page-title text-center">
+                                    <h2>My <span class="primary">Certificates</span> <span class="title-bg">Certificates</span></h2>
+                                    <p>Here are some of my Certificates that I got by doing courses online.</p>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="loader"></div>
+
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="filter list-inline">
+                                  <center> <h2> <li><a href="#" class="active" data-filter="*">All Certificates</a></li> </h2></center>
+                        <!--            <li><a href="#" data-filter=".Photoshop">Photoshop</a></li>
+                                    <li><a href="#" data-filter=".Illustrator">Illustrator</a></li>
+                                    <li><a href="#" data-filter=".Indesign">Indesign</a></li>
+                                    <li><a href="#" data-filter=".Artworks">Artworks</a></li>\ -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div style="display:none;" id="myDiv" class="animate-bottom">
+
+                          <div class="gallery cf">
+
+                            <div>
+                              <img src="../img/works/p15.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p16.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p17.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p19.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p5.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p6.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p7.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p8.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p9.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p10.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p11.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p12.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p1.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p2.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p3.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p4.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p13.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p14.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p18.jpg" />
+                            </div>
+                            <div>
+                              <img src="i../mg/works/p20.jpg" />
+                            </div>
+                              
+                            <div>
+                              <img src="../img/works/p23.png" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p24.png" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p21.jpg" />
+                            </div>
+                            <div>
+                              <img src="../img/works/p22.jpg" />
+                            </div>
+                          </div>
+
+                        </div>
+
+                    <nav class="page-nav clear">
+                        <div class="container">
+                            <div class="flex flex-middle space-between">
+                                <span class="prev-page"><a href="resume.html" class="link">&larr; Prev Page</a></span>
+                                <span class="next-page"><a href="contact.html" class="link">Next Page &rarr;</a></span>
+                            </div>
+                        </div>
+                        <!-- /.page-nav -->
+                    </nav>
+                    <!-- /.container -->
+
+                </div> <!-- /.pt-tablecell -->
+            </div> <!-- /.pt-table -->
+        </main> <!-- /.site-wrapper -->
+
+        <!-- ================================
+        JavaScript Libraries
+        ================================= -->
+        <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+        <script src="../js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/isotope.pkgd.min.js"></script>
+        <script src="../js/jquery.nicescroll.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery-validation.min.js"></script>
+        <script src="../js/form.min.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
