@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Center align content inside */
+}
+
+.container {
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logo-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto; /* Center align logo */
+}
+
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  flex-wrap: wrap; /* Wrap buttons to new line when needed */
+}
+
+.social-button {
+  margin: 10px;
+  text-align: center; /* Center align content inside */
+}
+
+.button {
+  display: inline-block;
+  width: 180px; /* Adjust button width */
+  height: 40px; /* Adjust button height */
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 10px; /* Adjust border radius */
+  text-align: center; /* Align text to the center */
+  line-height: 40px; /* Center text vertically */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  position: relative; /* Position relative for absolute positioning of elements inside */
+  transition: background-color 0.3s ease;
+}
+
+.button img {
+  width: 20px; /* Adjust image size */
+  height: 20px;
+  margin-right: 5px; /* Space between image and text */
+  vertical-align: middle; /* Align image vertically */
+}
+
+.button span {
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.typewrite {
+  font-size: 2em;
+  overflow: hidden; /* Ensures text won't overflow */
+  border-right: .15em solid white; /* Typing cursor */
+  white-space: nowrap; /* Keeps text on one line */
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Individual social button styles */
+.facebook {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.linkedin {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+
+.github {
+  background-color: #333; /* GitHub dark grey */
+}
+
+.website {
+  background-color: #4caf50; /* Website green */
+}
