@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rizowan's Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+body {
+  background-color: #111111;
+  font-family: "ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  width: 120ch;
+  padding: 2ch;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+
+  box-shadow: 0 0 50px #FFFFFF;
+}
+
+.post-header {
+  color: white;
+  font-size: 1.8rem;
+  font-family: Helvetica;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.post-content {
+  color: white;
+  margin-bottom: 2ch;
+  font-size: 1.2rem;
+}
+
+.image-contents {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/1.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content1 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/2.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content2 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/3.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content3 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/4.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content4 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/5.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content5 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/6.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content6 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/7.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content7 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/8.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content8 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/9.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content9 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/10.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.image-content10 {
+  content: url("https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/11.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+
+</style>
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="post-header">Shakib Al Hasan's LIVE ODI Performance Analysis by Scraping Cricinfo dataset</div>
+  <br>
+  <br>
+  <img src="https://raw.githubusercontent.com/riz1raj/web_img/main/p_1/1.png" alt="Nature" class="responsive" width="600" height="400">
+  <div class="post-content">
+
+    <p><br>Shakib Al Hasan is one of the most famous cricketer, number one all-rounder in the world. Here I scraped the Cricinfo dataset of all the ODI matches played by Shakib Al Hasan from his debut to December 2022. I will analyze the batting performance of Shakib's in ODI matches.<br><br>
+
+      Below is the complete information about all the columns in the dataset:
+      <br>
+    <ol>
+      <li>Runs: Runs in the match</li>
+      <li>BF: Balls faced in the match</li>
+      <li>4s: number of 4s in a match</li>
+      <li>6s: number of 6s in a match</li>
+      <li>SR: Strike Rate in the match</li>
+      <li>Pos: Batting Position in the match</li>
+      <li>Dismissal: How Virat Kohli got out in the match</li>
+      <li>Inns: 1st and 2nd innings</li>
+      <li>Opposition: Who was the opponent of India</li>
+      <li>Ground: Venue of the match</li>
+      <li>Start Date: Date of the match</li>
+    </ol>
+    <br>
+
+    <strong> <h2> You can view the source code from <a href="https://github.com/riz1raj/Scrapping-and-Analysis-Python/blob/main/Shakib_Cricket_ODI_Batting_Stat.ipynb"> here.</a> <h2><strong>
+      <h5><p style="color:red;">(Please give ★ on github if you like it)</p><h5>
+        <br>
+        Now let’s start with the task of Shakib's performance analysis using Python. I will start this task by importing the necessary Python libraries and the dataset:
+        <br>
+        <br>
+        <img class="image-content1">
+    <p>
+  </div>
+
+  <div class="post-content">
+    <p>Now let’s have a look at some of the scraped dataset of Shakib's career from his debut to December 2022:
+      <br>
+      <br>
+      <img class="image-content2">
+      <p>
+  </div>
+
+  <div class="post-content">
+    <p>Now let’s have a look at the trend of runs scored by Shakib's  career from his debut to December 2022:
+      <br>
+      <br>
+      <img class="image-content3">
+      <p>
+  </div>
+
+  <div class="post-content">
+    <p>
+      <br>
+      <br>
+      <img class="image-content4">
+      <br>
+      <br>
+      Here we can see more than 60% of all the innings played by Shakib, he batted in the fifth position and after that third and fourth position respectively.<br> Now let’s have a look at the total runs scored by Shakib Al hasan in different positions:
+      <p>
+  </div>
+
+
+  <div class="post-content">
+
+    <p>
+      <br>
+      <br>
+      <img class="image-content5">
+      <br>
+      <br>
+      More than 55% of the total runs scored by Shakib Al Hasan are while batting at 5th position and 3rd position. So we can say batting at 3rd and 5th positions is perfect for Shakib.<br>
+      Now let’s have a look at the number of centuries scored by Shakib while batting in the first innings and second innings:
+      <p>
+  </div>
+
+
+  <div class="post-content">
+
+    <p>
+      <br>
+      <br>
+      <img class="image-content6">
+      <br>
+      <br>
+      So most of the centuries are scored while batting in the first innings.<br> Now let’s have a look at the kind of dismissals Shakib faced most of the time:
+      <p>
+  </div>
+
+
+  <div class="post-content">
+
+    <p>
+      <br>
+      <br>
+      <img class="image-content7">
+      <br>
+      <br>
+      Here, most of the time, Shakib gets out by getting caught by the fielder or the keeper. <br>Now let’s have a look at against which team Shakib scored most of his runs:
+      <p>
+  </div>
+
+
+  <div class="post-content">
+
+    <p>
+      <br>
+      <br>
+      <img class="image-content8">
+      <br>
+      <br>
+      Here, most of the runs of Shakib's came against Zimbabwe because he plays a lot of match against Zimbabwe. After that he scored runs against West Indies, India, Srilanka, New Zeland, Pakistan respectively.<br>Now let’s have a look at against which team Shakib scored most of his centuries:
+      <p>
+  </div>
+
+
+  <div class="post-content">
+
+    <p>
+      <br>
+      <br>
+      <img class="image-content9">
+      <br>
+      <br>
+      Here, most of the centuries of Shakib's came against Zimbabwe and New Zeland. <br>Now let’s have a look at Strike rate in both innings of Shakib career:
+      <p>
+  </div>
+
+
+  <div class="post-content">
+
+    <p>
+      <br>
+      <img class="image-content10">
+      <br>
+      <br>
+      Here, we can see that Shakib strike rate in second innings is better than his first innings that means he scores at a good strike rate in second innings.
+      <p>
+  </div>
+  <div class="post-content">
+
+    <p>
+
+      <br>
+      <br>
+
+        <strong>Conclusion: </strong> By analyzing Shakib's career we can see that how he is improving day by day and reahes new milestones. I hope you liked this article on Shakib Al Hasan performance analysis using Python. <center><h2>Thanks.....🙏</h2></center></p>
+  </div>
+
+
+</div>
+<!-- partial -->
+
+</body>
+</html>
