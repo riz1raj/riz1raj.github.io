@@ -1,0 +1,22 @@
+body {
+      background: linear-gradient(45deg, #d6b7cb, #7d097d);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+    }
+    
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    h1, p {
+      text-align: center;
+      margin: 50px auto;
+    }
