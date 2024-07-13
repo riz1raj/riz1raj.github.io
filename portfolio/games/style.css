@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("https://img.freepik.com/premium-photo/gamer-playing-desktop-pc-computer-gaming-illustration_691560-5611.jpg?w=1060") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 30px;
+  animation-name: moveToLeft;
+  animation-duration: 2s;
+}
+
+.banner span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+.banner p {
+  font-size: 50px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+  animation-name: moveToRight;
+  animation-duration: 2s;
+}
+
+.banner button {
+  width: 200px;
+  padding: 12px;
+  margin: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  outline: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: #333;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  animation-name: animateBtn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.banner button:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 80px #ffcc00;
+}
+
+.btn-left {
+  animation-delay: 1.5s;
+}
+
+.btn-right {
+  animation-delay: 2.3s;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
