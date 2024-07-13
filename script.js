@@ -63,7 +63,7 @@ function init() {
         new THREE.BufferAttribute(new Float32Array(sizes), 1)
     );
     rainMaterial = new THREE.PointsMaterial({
-        color: 0x00ff00, // Neon green color
+        color: 0xffffff, // Neon green color
         size: 0.5, // Larger particles
         transparent: true,
         sizeAttenuation: true
