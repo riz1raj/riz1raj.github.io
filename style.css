@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: rgb(255, 255, 255);
+  color: rgb(254, 254, 254);
+  font-weight: bold;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -67,8 +68,8 @@ body {
   text-decoration: none;
   color: white;
   background-color: #333;
-  border: 1px solid #555;
-  border-radius: 10px; /* Adjust border radius */
+  border: 3px solid #ffffff;
+  border-radius: 20px; /* Adjust border radius */
   text-align: center; /* Align text to the center */
   line-height: 40px; /* Center text vertically */
   overflow: hidden; /* Ensures content doesn't overflow */
@@ -88,7 +89,7 @@ body {
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #450505;
 }
 
 .typewrite {
@@ -116,23 +117,23 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: rgb(253, 7, 11);
   }
 }
 
 /* Individual social button styles */
 .facebook {
-  background-color: #3b5998; /* Facebook blue */
+  background-color: #1c033e14; /* Facebook blue */
 }
 
 .linkedin {
-  background-color: #0077b5; /* LinkedIn blue */
+  background-color: #1c033e14; /* LinkedIn blue */
 }
 
 .github {
-  background-color: #333; /* GitHub dark grey */
+  background-color: #1c033e14; /* GitHub dark grey */
 }
 
 .website {
-  background-color: #4caf50; /* Website green */
+  background-color: #1c033e14; /* Website green */
 }
