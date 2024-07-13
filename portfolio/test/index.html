@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Blog</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .glowing-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(to bottom, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff, #ff00ff);
+      background-size: 100% 100%;
+      animation: glowing-gradient 10s linear infinite;
+    }
+
+    @keyframes glowing-gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .left-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100vh;
+      background-image: linear-gradient(to bottom, #ff00ff, #8b00ff, #0000ff, #00ff00, #ffff00, #ff7f00, #ff0000);
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .glowing-text {
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      font-size: 36px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: text-reveal 3s linear infinite;
+    }
+
+    @keyframes text-reveal {
+      0% {
+        transform: translateY(100%);
+      }
+      20% {
+        transform: translateY(0%);
+      }
+      80% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      padding: 20px;
+      margin: 0 auto;
+      margin-top: 100px; /* Added margin to create space for the glowing section */
+    }
+
+    .tile {
+      flex: 0 0 calc(33.33% - 20px);
+      height: 300px;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tile:hover {
+      transform: scale(1.05);
+    }
+
+    .tile-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .tile-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .tile-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    .tile-description {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .publish-date {
+      font-size: 12px;
+      color: #cccccc;
+      margin-top: 10px;
+    }
+
+    .read-more {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      background-color: #cccccc;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .glowing-section {
+        display: none;
+      }
+
+      .left-section {
+        display: none;
+      }
+
+      .container {
+        margin-top: 0;
+      }
+
+      .tile {
+        flex: 0 0 100%;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      .glowing-text {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glowing-section"></div>
+  <div class="left-section">
+    <div class="glowing-text">
+      <span class="animated-word">R</span>
+      <span class="animated-word">i</span>
+      <span class="animated-word">z</span>
+      <span class="animated-word">o</span>
+      <span class="animated-word">w</span>
+      <span class="animated-word">a</span>
+      <span class="animated-word">n</span>
+    </div>
+  </div>
+  <h1 style="text-align: center;">Welcome to my website</h1> <!-- Added heading with centered alignment -->
+  <div class="container">
+    <div class="tile">
+      <img class="tile-image" src="image1.jpg" alt="Image 1">
+      <div class="tile-content">
+        <h2 class="tile-title">Tile 1</h2>
+        <p class="tile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="publish-date">Published on: July 1, 2023</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="tile-image" src="image2.jpg" alt="Image 2">
+      <div class="tile-content">
+        <h2 class="tile-title">Tile 2</h2>
+        <p class="tile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="publish-date">Published on: July 2, 2023</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="tile-image" src="image3.jpg" alt="Image 3">
+      <div class="tile-content">
+        <h2 class="tile-title">Tile 3</h2>
+        <p class="tile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="publish-date">Published on: July 3, 2023</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="tile-image" src="image4.jpg" alt="Image 4">
+      <div class="tile-content">
+        <h2 class="tile-title">Tile 4</h2>
+        <p class="tile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="publish-date">Published on: July 4, 2023</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="tile-image" src="image5.jpg" alt="Image 5">
+      <div class="tile-content">
+        <h2 class="tile-title">Tile 5</h2>
+        <p class="tile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="publish-date">Published on: July 5, 2023</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="tile-image" src="image6.jpg" alt="Image 6">
+      <div class="tile-content">
+        <h2 class="tile-title">Tile 6</h2>
+        <p class="tile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="publish-date">Published on: July 6, 2023</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var animatedWords = document.getElementsByClassName("animated-word");
+    var wordCount = animatedWords.length;
+
+    function animateWords() {
+      var delay = 0;
+      for (var i = 0; i < wordCount; i++) {
+        animatedWords[i].style.animationDelay = delay + "s";
+        delay += 0.2;
+      }
+    }
+
+    animateWords();
+  </script>
+</body>
+</html>
