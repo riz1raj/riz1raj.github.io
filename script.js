@@ -73,7 +73,7 @@ function init() {
 
     let loader = new THREE.TextureLoader();
     loader.load(
-        "https://static.vecteezy.com/system/resources/previews/010/884/548/original/dense-fluffy-puffs-of-white-smoke-and-fog-on-transparent-background-abstract-smoke-clouds-movement-blurred-out-of-focus-smoking-blows-from-machine-dry-ice-fly-fluttering-in-air-effect-texture-png.png",
+        "https://raw.githubusercontent.com/riz1raj/blogger/main/bg.png",
         function (texture) {
             cloudGeo = new THREE.PlaneBufferGeometry(500, 500);
             cloudMaterial = new THREE.MeshLambertMaterial({
